@@ -1,11 +1,12 @@
-import sklearn
+# lib
 import pandas as pd
-import matplotlib as plot
-
+import numpy as np
+import matplotlib as plt
 from sklearn import svm
 
-digits = pd.read_csv('X:\Datasets\mnist_784.csv')
+# read and split data
 
-#train the first 2000 images
-train_x = images[:2000]
-train_y = labels[:2000]
+path = r"X:/Datasets/mnist_784.csv"
+dataframe = pd.read_csv(path)
+
+print(dataframe.head(5))
